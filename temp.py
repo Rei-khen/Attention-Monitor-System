@@ -8,3 +8,6 @@ while webcam.isOpened():
     cv2.imshow("Webcam",img)
     if cv2.waitKey(5) & 0xFF == ord("q"):
         break
+
+webcam.release()          
+cv2.destroyAllWindows()   
